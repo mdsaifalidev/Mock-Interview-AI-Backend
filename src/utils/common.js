@@ -29,7 +29,6 @@ const cookieOptions = {
   secure: true,
   sameSite: "none",
   path: "/",
-  domain: ".mockaiinterview.vercel.app"
 }
 
 // *Set data to redis
