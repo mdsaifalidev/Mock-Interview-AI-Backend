@@ -11,12 +11,11 @@ import {
   getInterviewByIdValidator,
 } from "../validators/interview.validator.js"
 import validate from "../middlewares/validate.middleware.js"
-import verifyReCaptcha from "../middlewares/reCaptcha.middleware.js"
 
 const router = Router()
 
 router
-  .post("/", createInterviewValidator(), validate, verifyReCaptcha, createInterview)
+  .post("/", createInterviewValidator(), validate, createInterview)
   .get("/", getAllInterviews)
   .get("/:id", getInterviewByIdValidator(), validate, getInterviewById)
   .put("/:id", endInterviewValidator(), validate, endInterview)
