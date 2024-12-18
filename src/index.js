@@ -22,6 +22,7 @@ app.use(
   "/api/v1/payments/checkout-success",
   express.raw({ type: "application/json" })
 )
+app.use(cookieParser())
 app.use((req, res, next) => {
   if (req.originalUrl === "/api/v1/payments/checkout-success") {
     next()
@@ -32,7 +33,6 @@ app.use((req, res, next) => {
 app.use(express.urlencoded({ extended: true, limit: "16kb" }))
 app.use(hpp())
 app.use(mongoSanitize())
-app.use(cookieParser())
 
 // *Routes
 import authRouter from "./routes/auth.route.js"
