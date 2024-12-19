@@ -10,7 +10,7 @@ import verifyJWT from "./middlewares/auth.middleware.js"
 
 const app = express()
 
-// *Middlewares 
+// *Middlewares
 app.use(helmet())
 app.use(
   cors({
