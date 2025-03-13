@@ -1,4 +1,4 @@
-# Mock Interview Project
+# Mock Interview AI
 
 **Live Demo**: [Mock AI Interview](https://mockaiinterview.vercel.app/)
 
