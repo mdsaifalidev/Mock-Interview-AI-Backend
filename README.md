@@ -11,14 +11,17 @@ This project is built using the **MERN** stack (MongoDB, Express.js, React.js, N
 ---
 
 ### Tech Stack:
-- **React.js**: For building a dynamic, responsive user interface.
-- **TanStack Query**: Used for efficient server-state management and reducing data-fetching latency by 30%.
-- **Google Gemini AI**: Integrated for interview question generation and analysis of answers.
-- **Speech-to-Text**: Allows users to speak their answers and have them transcribed and analyzed automatically.
+- **Node.js:** Backend server to handle API requests and application logic.
+- **Express.js:** Web framework for building RESTful APIs.
+- **MongoDB:** NoSQL database used for storing user data, interview history, and results.
+- **Redis:** In-memory data store used for caching to improve performance by 40%.
+- **Google Gemini AI:** Integrated AI service for question generation and answer analysis.
+- **Stripe:** Payment gateway used to handle payments for premium features.
 
 ### Features:
-- **Real-time Interview Simulation**: Users can take mock interviews powered by AI with dynamically generated questions.
-- **Feedback System**: The system uses AI to analyze spoken answers and provide detailed feedback on performance.
-- **Payment Integration**: Users can access premium features via Stripe payment integration.
-- **Efficient Data Management**: The frontend uses **TanStack Query** to manage server state and minimize data-fetching latency.
-- **Responsive Design**: Fully responsive UI designed for both desktop and mobile devices.
+- **User Authentication & Authorization:** Secure user registration, login, and session management.
+- **Interview Data Storage:** Store and retrieve user responses, interview history, and feedback.
+- **Payment Processing:** Stripe integration for managing user subscriptions and premium features.
+- **Caching:** Redis is used to cache frequently accessed data, significantly reducing response times and improving performance.
+- **AI Integration:** Uses Google Gemini AI to generate interview questions and analyze user responses.
+- **Speech-to-Text:** Converts speech responses into text for analysis and feedback generation.
