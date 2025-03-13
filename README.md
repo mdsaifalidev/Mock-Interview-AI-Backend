@@ -10,8 +10,6 @@ This project is built using the **MERN** stack (MongoDB, Express.js, React.js, N
 
 ---
 
-## Frontend (React.js)
-
 ### Tech Stack:
 - **React.js**: For building a dynamic, responsive user interface.
 - **TanStack Query**: Used for efficient server-state management and reducing data-fetching latency by 30%.
